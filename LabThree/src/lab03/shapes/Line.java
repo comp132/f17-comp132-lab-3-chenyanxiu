@@ -128,6 +128,7 @@ public class Line implements Drawable{
 		y2 = newY2;
 	}
 
+
 	// === Implementation of the Drawable interface ===
 
 	/**

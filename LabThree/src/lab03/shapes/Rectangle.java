@@ -13,7 +13,7 @@ import java.awt.Graphics;
  * @version Sep. 20th, 2017
  */
 
-public class Rectangle {
+public class Rectangle implements Drawable, Scaleable{
 	private int x;
 	private int y;
 	private int width;
@@ -27,7 +27,7 @@ public class Rectangle {
 	 * visible by default.
 	 * 
 	 * @param initX the x coordinate of the top left of the rectangle.
-	 * @param initY the y coordinate of the bottom left of the rectangle.
+	 * @param initY the y coordinate of the top left of the rectangle.
 	 * @param initWidth the width of the rectangle.
 	 * @param initHeight the height of the rectangle.
 	 * @param initColor the color of the rectangle.
@@ -51,7 +51,7 @@ public class Rectangle {
 	}
 
 	/**
-	 * Get the y coordinate of the bottom left of this Rectangle.
+	 * Get the y coordinate of the top left of this Rectangle.
 	 * 
 	 * @return the y coordinate
 	 */
@@ -98,7 +98,7 @@ public class Rectangle {
 	}
 
 	/**
-	 * Move the Rectangle to a new location. This method changes the top left and bottom left points
+	 * Move the Rectangle to a new location. This method changes the top left points
 	 * of the rectangle using the values provided by the parameters.
 	 * 
 	 * @param newX the new x coordinate
@@ -110,7 +110,7 @@ public class Rectangle {
 	}
 
 	/**
-	 * Move the Rectangle relative to its current location. The top and bottom left points of the
+	 * Move the Rectangle relative to its current location. The top and top left points of the
 	 * rectangle are moved by adding the parameters to the Rectangle's current
 	 * location.
 	 * 

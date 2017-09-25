@@ -21,7 +21,7 @@ public class LineTest {
 		 * Construct all of the objects being used in the test fixture here.
 		 */
 		l1 = new Line(0,0,1,1,Color.black);
-		
+
 	}
 
 	@Test
@@ -32,31 +32,31 @@ public class LineTest {
 		assertEquals("Y2 is not correct", 1, l1.getY2());
 		assertSame("The color is not correct", Color.black, l1.getColor());
 	}
-	
+
 	@Test
 	public void testSetX1() {
 		l1.setX1(1);
 		assertEquals("The x1 is not correct.", 1, l1.getX1());
 	}
-	
+
 	@Test
 	public void testSetX2() {
 		l1.setX2(2);
 		assertEquals("The x2 is not correct.", 2, l1.getX2());
 	}
-	
+
 	@Test
 	public void testSetY1() {
 		l1.setY1(1);
 		assertEquals("The y1 is not correct.", 1, l1.getY1());
 	}
-	
+
 	@Test
 	public void testSetY2() {
 		l1.setY2(2);
 		assertEquals("The y2 is not correct.", 2, l1.getY2());
 	}
-	
+
 	@Test
 	public void testMove() {
 		l1.move(2,2,3,3);
@@ -65,22 +65,22 @@ public class LineTest {
 		assertEquals("The line does not move correctly", 3, l1.getX2());
 		assertEquals("The line does not move correctly", 3, l1.getY2());
 	}
-	
+
 	@Test
 	public void testSetColor() {
 		l1.setColor(Color.CYAN);
 		assertEquals("The line's color does not change correctly", Color.CYAN, l1.getColor());
 	}
-	
+
 	@Test
 	public void testIsVisible() {
 		assertTrue("The line was not properly made visible", l1.isVisible());
 	}
-	
+
 	@Test
 	public void testSetVisible() {
 		l1.setVisible(false);
 		assertFalse("The line was not changed to invisible", l1.isVisible());
 	}
-	
+
 }

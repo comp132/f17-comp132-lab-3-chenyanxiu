@@ -12,7 +12,7 @@ public class DrawableObjectListTest {
 	Drawable d1;
 	Drawable d2;
 	Drawable d3;
-	
+
 	/**
 	 * DrawableObject for the test fixture. This variable is a field and is thus available
 	 * in all of the tests.
@@ -34,7 +34,7 @@ public class DrawableObjectListTest {
 	public void testZeroArgConstructo() {
 		assertEquals("No DrawableOjectList is constructed", 0, objList1.getSize());
 	}
-	
+
 	@Test
 	public void testAddDrawable() {
 		assertEquals("There is an object on the list", 0, objList1.getSize());
@@ -42,9 +42,9 @@ public class DrawableObjectListTest {
 		objList1.addDrawable(d2);
 		objList1.addDrawable(d3);
 		assertEquals("Not three objects on the list", 3, objList1.getSize());
-		
+
 	}
-	
+
 	@Test
 	public void testRemoveDrawable() {
 		objList1.addDrawable(d1);
@@ -55,19 +55,19 @@ public class DrawableObjectListTest {
 		assertEquals("Not properly removing object", 2, objList1.getSize());	
 		//get
 	}
-	
+
 	@Test
 	public void testScaleAll() {
 		objList1.addDrawable(d1);
 		objList1.addDrawable(d2);
 		objList1.addDrawable(d3);
 		objList1.scaleAll(2.0);
-	    Circle c1 = (Circle) d1; 
-	    Circle c2 = (Circle) d2; 
-	    Circle c3 = (Circle) d3; 
+		Circle c1 = (Circle) d1; 
+		Circle c2 = (Circle) d2; 
+		Circle c3 = (Circle) d3; 
 		assertEquals("Not scaling correctly", 2, c1.getRadius());	
 		assertEquals("Not scaling correctly", 2, c2.getRadius());	
 		assertEquals("Not scaling correctly", 2, c3.getRadius());	
 	}
-	
+
 }
