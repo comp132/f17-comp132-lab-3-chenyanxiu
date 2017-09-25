@@ -21,7 +21,6 @@ public class LineTest {
 		 * Construct all of the objects being used in the test fixture here.
 		 */
 		l1 = new Line(0,0,1,1,Color.black);
-
 	}
 
 	@Test
@@ -82,5 +81,4 @@ public class LineTest {
 		l1.setVisible(false);
 		assertFalse("The line was not changed to invisible", l1.isVisible());
 	}
-
 }

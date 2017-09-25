@@ -42,7 +42,6 @@ public class DrawableObjectListTest {
 		objList1.addDrawable(d2);
 		objList1.addDrawable(d3);
 		assertEquals("Not three objects on the list", 3, objList1.getSize());
-
 	}
 
 	@Test
@@ -53,7 +52,6 @@ public class DrawableObjectListTest {
 		assertEquals("Not properly removing object", 3, objList1.getSize());
 		objList1.removeDrawable(d1);
 		assertEquals("Not properly removing object", 2, objList1.getSize());	
-		//get
 	}
 
 	@Test
@@ -69,5 +67,4 @@ public class DrawableObjectListTest {
 		assertEquals("Not scaling correctly", 2, c2.getRadius());	
 		assertEquals("Not scaling correctly", 2, c3.getRadius());	
 	}
-
 }
